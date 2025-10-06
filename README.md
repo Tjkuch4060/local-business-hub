@@ -4,8 +4,8 @@
 
 A comprehensive, all-in-one platform designed specifically for local service businesses. This SaaS demo includes a professional website builder, online booking system, customer relationship management (CRM), and review management tools - all integrated into a single, user-friendly interface.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/local-business-hub)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/local-business-hub)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Tjkuch4060/local-business-hub)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Tjkuch4060/local-business-hub)
 
 ## ✨ Features
 
@@ -55,7 +55,7 @@ A comprehensive, all-in-one platform designed specifically for local service bus
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/local-business-hub.git
+   git clone https://github.com/Tjkuch4060/local-business-hub.git
    cd local-business-hub
    ```
 
