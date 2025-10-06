@@ -1,0 +1,47 @@
+{
+  "name": "local-business-hub",
+  "version": "1.0.0",
+  "description": "All-in-One Platform for Local Businesses - Website, Booking, CRM, and Reviews Management",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --no-browser",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "npx clean-css-cli -o style.min.css style.css",
+    "minify:js": "npx terser app.js -o app.min.js --compress --mangle",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:vercel": "vercel --prod",
+    "deploy:gh-pages": "gh-pages -d .",
+    "optimize": "npm run optimize:images",
+    "optimize:images": "npx imagemin market_growth_chart.png --out-dir=. --plugin=pngquant",
+    "serve": "npx serve .",
+    "lighthouse": "npx lighthouse http://localhost:3000 --view"
+  },
+  "keywords": [
+    "local-business",
+    "saas",
+    "booking-system",
+    "crm",
+    "website-builder",
+    "reviews"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.31.0",
+    "gh-pages": "^6.1.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "live-server": "^1.2.2",
+    "lighthouse": "^11.7.1",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/local-business-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/local-business-hub/issues"
+  },
+  "homepage": "https://yourusername.github.io/local-business-hub"
+}

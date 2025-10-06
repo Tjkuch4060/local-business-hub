@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Everything your local business needs in one simple platform. Professional website, online booking, customer management, and review tools - all in one affordable package.">
+    <meta name="keywords" content="local business software, booking system, CRM, website builder, review management, small business tools">
+    <meta name="author" content="Local Business Hub">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Local Business Hub - All-in-One Platform for Local Businesses">
+    <meta property="og:description" content="Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package.">
+    <meta property="og:image" content="https://yourdomain.com/market_growth_chart.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Local Business Hub - All-in-One Platform for Local Businesses">
+    <meta property="twitter:description" content="Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package.">
+    <meta property="twitter:image" content="https://yourdomain.com/market_growth_chart.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>">
+    
+    <!-- Performance optimization -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <title>Local Business Hub - All-in-One Platform for Local Businesses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-store"></i>
+                <span>Local Business Hub</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active" data-view="home">Home</a>
+                <a href="#" class="nav-link" data-view="dashboard">Dashboard</a>
+                <a href="#" class="nav-link" data-view="website">Website</a>
+                <a href="#" class="nav-link" data-view="booking">Booking</a>
+                <a href="#" class="nav-link" data-view="crm">CRM</a>
+                <a href="#" class="nav-link" data-view="reviews">Reviews</a>
+                <a href="#" class="nav-link" data-view="pricing">Pricing</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Landing Page -->
+    <section id="home" class="view active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Everything Your Local Business Needs in One Simple Platform</h1>
+                    <p>Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package designed for local service businesses.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" data-view="dashboard">View Demo</button>
+                        <button class="btn btn--outline btn--lg" data-view="pricing">View Pricing</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-mockup">
+                        <i class="fas fa-desktop"></i>
+                        <span>Your Business Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="container">
+                <h2>Built Specifically for Local Service Businesses</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Professional Website</h3>
+                        <p>Get online in minutes with templates designed for plumbers, salons, landscapers, and more.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Online Booking</h3>
+                        <p>Let customers book appointments 24/7 while you focus on your business.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Customer Management</h3>
+                        <p>Keep track of all your customers, their history, and follow up opportunities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Review Management</h3>
+                        <p>Automatically request reviews and respond to feedback to build your reputation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="market-section">
+            <div class="container">
+                <h2>Join the Growing Market</h2>
+                <div class="market-chart">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/07ffe6c4a9dc5a19fc23dbc351e13d38/278551ad-8fdf-4051-9500-1965a4a45cd4/7b1e2dae.png" alt="Market Growth Analysis" />
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="container">
+                <h2>Ready to Grow Your Business?</h2>
+                <p>Join thousands of local businesses already using our platform</p>
+                <button class="btn btn--primary btn--lg" data-view="pricing">Start Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="view">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Mike's Plumbing Services Dashboard</h1>
+                <p>Denver, CO • (303) 555-0123</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <div class="stat-content">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Bookings This Week</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-content">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Total Customers</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-content">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Avg. Rating</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <div class="stat-content">
+                        <span class="stat-number">$2,850</span>
+                        <span class="stat-label">Monthly Revenue</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-modules">
+                <div class="module-card" data-view="website">
+                    <i class="fas fa-globe"></i>
+                    <h3>Website Builder</h3>
+                    <p>Update your website and add new pages</p>
+                    <span class="module-status status--success">Active</span>
+                </div>
+                <div class="module-card" data-view="booking">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Booking System</h3>
+                    <p>Manage appointments and services</p>
+                    <span class="module-status status--success">2 New Bookings</span>
+                </div>
+                <div class="module-card" data-view="crm">
+                    <i class="fas fa-users"></i>
+                    <h3>Customer Management</h3>
+                    <p>Track customers and leads</p>
+                    <span class="module-status status--info">3 Follow-ups</span>
+                </div>
+                <div class="module-card" data-view="reviews">
+                    <i class="fas fa-star"></i>
+                    <h3>Review Management</h3>
+                    <p>Request and manage reviews</p>
+                    <span class="module-status status--warning">1 Response Needed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Builder -->
+    <section id="website" class="view">
+        <div class="container">
+            <h1>Website Builder</h1>
+            <div class="website-builder">
+                <div class="builder-sidebar">
+                    <div class="template-section">
+                        <h3>Templates</h3>
+                        <div class="template-grid">
+                            <div class="template-card active" data-template="plumber">
+                                <i class="fas fa-wrench"></i>
+                                <span>Plumber</span>
+                            </div>
+                            <div class="template-card" data-template="salon">
+                                <i class="fas fa-cut"></i>
+                                <span>Salon</span>
+                            </div>
+                            <div class="template-card" data-template="landscaper">
+                                <i class="fas fa-seedling"></i>
+                                <span>Landscaper</span>
+                            </div>
+                            <div class="template-card" data-template="bakery">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>Bakery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customization-section">
+                        <h3>Customize</h3>
+                        <div class="form-group">
+                            <label class="form-label">Business Name</label>
+                            <input type="text" class="form-control" value="Mike's Plumbing Services" id="businessName">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Primary Color</label>
+                            <input type="color" class="form-control color-input" value="#1d74a4" id="primaryColor">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control" value="(303) 555-0123" id="businessPhone">
+                        </div>
+                    </div>
+                </div>
+                <div class="builder-preview">
+                    <div class="preview-header">
+                        <span>Preview</span>
+                        <button class="btn btn--sm btn--primary">Publish</button>
+                    </div>
+                    <div class="website-preview">
+                        <div class="preview-site">
+                            <div class="preview-header-section">
+                                <h2 id="previewBusinessName">Mike's Plumbing Services</h2>
+                                <p>Professional Plumbing Services in Denver, CO</p>
+                                <span id="previewPhone">(303) 555-0123</span>
+                            </div>
+                            <div class="preview-services">
+                                <h3>Our Services</h3>
+                                <div class="service-list">
+                                    <div class="service-item">Emergency Repairs</div>
+                                    <div class="service-item">Drain Cleaning</div>
+                                    <div class="service-item">Water Heater Installation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System -->
+    <section id="booking" class="view">
+        <div class="container">
+            <div class="booking-header">
+                <h1>Booking System</h1>
+                <button class="btn btn--primary" id="addServiceBtn">Add Service</button>
+            </div>
+            
+            <div class="booking-tabs">
+                <button class="tab-btn active" data-tab="calendar">Calendar</button>
+                <button class="tab-btn" data-tab="services">Services</button>
+                <button class="tab-btn" data-tab="bookings">Bookings</button>
+            </div>
+
+            <div class="tab-content active" id="calendar">
+                <div class="calendar-view">
+                    <div class="calendar-header">
+                        <h3>October 2024</h3>
+                        <div class="calendar-nav">
+                            <button class="btn btn--sm btn--outline"><i class="fas fa-chevron-left"></i></button>
+                            <button class="btn btn--sm btn--outline"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">
+                            <span class="day-number">15</span>
+                            <div class="booking-slot">09:00 - Sarah J.</div>
+                        </div>
+                        <div class="calendar-day">
+                            <span class="day-number">16</span>
+                            <div class="booking-slot">14:00 - Robert C.</div>
+                        </div>
+                        <div class="calendar-day">
+                            <span class="day-number">17</span>
+                            <span class="available">Available</span>
+                        </div>
+                        <div class="calendar-day">
+                            <span class="day-number">18</span>
+                            <span class="available">Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="services">
+                <div class="services-list">
+                    <div class="service-card">
+                        <h4>Emergency Repair</h4>
+                        <p>24/7 emergency plumbing repairs</p>
+                        <div class="service-details">
+                            <span>60 min • $150</span>
+                            <button class="btn btn--sm btn--outline">Edit</button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h4>Drain Cleaning</h4>
+                        <p>Professional drain cleaning service</p>
+                        <div class="service-details">
+                            <span>45 min • $120</span>
+                            <button class="btn btn--sm btn--outline">Edit</button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h4>Water Heater Installation</h4>
+                        <p>Complete water heater installation</p>
+                        <div class="service-details">
+                            <span>180 min • $450</span>
+                            <button class="btn btn--sm btn--outline">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="bookings">
+                <div class="bookings-list">
+                    <div class="booking-item">
+                        <div class="booking-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Drain Cleaning • Oct 15, 2024 at 9:00 AM</p>
+                        </div>
+                        <div class="booking-status">
+                            <span class="status status--success">Confirmed</span>
+                        </div>
+                    </div>
+                    <div class="booking-item">
+                        <div class="booking-info">
+                            <h4>Robert Chen</h4>
+                            <p>Emergency Repair • Oct 16, 2024 at 2:00 PM</p>
+                        </div>
+                        <div class="booking-status">
+                            <span class="status status--warning">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRM -->
+    <section id="crm" class="view">
+        <div class="container">
+            <div class="crm-header">
+                <h1>Customer Management</h1>
+                <div class="crm-actions">
+                    <input type="text" class="form-control" placeholder="Search customers..." id="customerSearch">
+                    <button class="btn btn--primary">Add Customer</button>
+                </div>
+            </div>
+
+            <div class="crm-tabs">
+                <button class="tab-btn active" data-tab="customers">Customers</button>
+                <button class="tab-btn" data-tab="leads">Leads</button>
+                <button class="tab-btn" data-tab="analytics">Analytics</button>
+            </div>
+
+            <div class="tab-content active" id="customers">
+                <div class="customers-list">
+                    <div class="customer-card">
+                        <div class="customer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="customer-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>sarah@email.com • (303) 555-0111</p>
+                            <p class="customer-address">123 Oak St, Denver, CO</p>
+                        </div>
+                        <div class="customer-stats">
+                            <span class="stat">$285 Total</span>
+                            <span class="status status--success">Active</span>
+                        </div>
+                        <button class="btn btn--sm btn--outline customer-details-btn" data-customer="1">View Details</button>
+                    </div>
+                    
+                    <div class="customer-card">
+                        <div class="customer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="customer-info">
+                            <h4>Maria Rodriguez</h4>
+                            <p>maria@email.com • (303) 555-0333</p>
+                            <p class="customer-address">Regular maintenance customer</p>
+                        </div>
+                        <div class="customer-stats">
+                            <span class="stat">$420 Total</span>
+                            <span class="status status--success">Active</span>
+                        </div>
+                        <button class="btn btn--sm btn--outline customer-details-btn" data-customer="3">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="leads">
+                <div class="leads-list">
+                    <div class="lead-card">
+                        <div class="lead-info">
+                            <h4>Robert Chen</h4>
+                            <p>robert@email.com • (303) 555-0222</p>
+                            <p class="lead-source">Source: Google Search</p>
+                        </div>
+                        <div class="lead-status">
+                            <span class="status status--info">New Lead</span>
+                        </div>
+                        <div class="lead-notes">
+                            <p>Kitchen renovation project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="analytics">
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h4>Customer Retention</h4>
+                        <div class="metric-value">89%</div>
+                        <p>6-month retention rate</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h4>Average Customer Value</h4>
+                        <div class="metric-value">$275</div>
+                        <p>Per customer lifetime</p>
+                    </div>
+                    <div class="analytics-card">
+                        <h4>Lead Conversion</h4>
+                        <div class="metric-value">34%</div>
+                        <p>Lead to customer rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="view">
+        <div class="container">
+            <h1>Review Management</h1>
+            
+            <div class="reviews-tabs">
+                <button class="tab-btn active" data-tab="review-requests">Requests</button>
+                <button class="tab-btn" data-tab="review-display">Reviews</button>
+                <button class="tab-btn" data-tab="review-responses">Responses</button>
+            </div>
+
+            <div class="tab-content active" id="review-requests">
+                <div class="request-section">
+                    <h3>Automated Review Requests</h3>
+                    <div class="request-settings">
+                        <div class="setting-item">
+                            <label>Send review request after job completion</label>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="setting-item">
+                            <label>Send SMS reminders</label>
+                            <input type="checkbox" checked>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary">Send Custom Request</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="review-display">
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-platform">Google</span>
+                        </div>
+                        <div class="review-content">
+                            <p>"Excellent service! Mike was professional and fixed our drain quickly."</p>
+                            <div class="review-author">- Sarah Johnson</div>
+                            <div class="review-date">September 15, 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-platform">Yelp</span>
+                        </div>
+                        <div class="review-content">
+                            <p>"Always reliable and fair pricing. Highly recommend!"</p>
+                            <div class="review-author">- Maria Rodriguez</div>
+                            <div class="review-date">September 10, 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="review-responses">
+                <div class="responses-section">
+                    <h3>Review Response Templates</h3>
+                    <div class="template-list">
+                        <div class="template-item">
+                            <h4>Positive Review Response</h4>
+                            <p>"Thank you for taking the time to leave such a wonderful review! We're thrilled that you were satisfied with our service."</p>
+                            <button class="btn btn--sm btn--outline">Edit</button>
+                        </div>
+                        <div class="template-item">
+                            <h4>Negative Review Response</h4>
+                            <p>"We sincerely apologize for your experience. Please contact us directly so we can make this right."</p>
+                            <button class="btn btn--sm btn--outline">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="view">
+        <div class="container">
+            <div class="pricing-header">
+                <h1>Simple, Transparent Pricing</h1>
+                <p>Choose the plan that's right for your business. All plans include a 14-day free trial.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="price-amount">$29</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Simple Website</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Online Booking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Basic Customer List</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Email Support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--outline btn--full-width">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header-card">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="price-amount">$59</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional Website</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced Booking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Full CRM</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Review Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>SMS Notifications</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Priority Support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--full-width">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header-card">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="price-amount">$99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Website</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced Analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Social Media Scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>API Access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Phone Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Integrations</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--outline btn--full-width">Start Free Trial</button>
+                </div>
+            </div>
+
+            <div class="pricing-faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>Can I change plans anytime?</h4>
+                    <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there a setup fee?</h4>
+                    <p>No, there are no setup fees or hidden costs. The price you see is what you pay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Detail Modal -->
+    <div class="modal hidden" id="customerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalCustomerName">Customer Details</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalCustomerDetails">
+                <!-- Customer details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Service Modal -->
+    <div class="modal hidden" id="serviceModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Service</h3>
+                <button class="modal-close" id="closeServiceModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="serviceForm">
+                    <div class="form-group">
+                        <label class="form-label">Service Name</label>
+                        <input type="text" class="form-control" id="serviceName" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Duration (minutes)</label>
+                        <input type="number" class="form-control" id="serviceDuration" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Price ($)</label>
+                        <input type="number" class="form-control" id="servicePrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control" id="serviceDescription" rows="3"></textarea>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn--outline" id="cancelService">Cancel</button>
+                        <button type="submit" class="btn btn--primary">Add Service</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
