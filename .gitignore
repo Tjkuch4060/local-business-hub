@@ -40,6 +40,9 @@ logs/
 # Lighthouse reports
 *.report.html
 
+# Optimized image output
+optimized/
+
 # Testing
 coverage/
 .nyc_output/
