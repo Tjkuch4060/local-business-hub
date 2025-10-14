@@ -67,6 +67,10 @@ For both platforms, you will need to configure environment variables to inject y
 local-business-hub/
 ├── index.html              # Main (and only) application file
 ├── firestore.rules         # Security rules for your Firestore database
+├── scripts/
+│   └── optimize-images.sh  # Batch image optimization via @squoosh/cli
+├── optimized/              # Output folder for optimized images (gitignored)
+├── assets/                 # Place source images here (png/jpg/jpeg)
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml      # GitHub Actions workflow
@@ -75,3 +79,21 @@ local-business-hub/
 ├── netlify.toml            # Netlify configuration
 └── README.md               # This file
 ```
+
+## 🖼️ Assets and optimization
+
+This repo includes a safe, modern image optimization workflow powered by @squoosh/cli.
+
+- Place source images in assets/ (supports .png, .jpg, .jpeg)
+- Run batch optimization:
+  ```bash
+  npm run optimize:images
+  ```
+- Outputs are written to optimized/ (gitignored)
+- Encoders:
+  - PNG: oxipng (lossless)
+  - JPEG: mozjpeg (quality 80)
+  - WebP: quality 80
+  - AVIF: cqLevel 33
+
+You can tweak encoders/qualities in scripts/optimize-images.sh.
