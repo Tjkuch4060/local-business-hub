@@ -12,27 +12,334 @@
     <meta property="og:url" content="https://yourdomain.com/">
     <meta property="og:title" content="Local Business Hub - All-in-One Platform for Local Businesses">
     <meta property="og:description" content="Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package.">
-    <meta property="og:image" content="https://yourdomain.com/market_growth_chart.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://yourdomain.com/">
     <meta property="twitter:title" content="Local Business Hub - All-in-One Platform for Local Businesses">
     <meta property="twitter:description" content="Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package.">
-    <meta property="twitter:image" content="https://yourdomain.com/market_growth_chart.png">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>">
     
-    <!-- Performance optimization -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <title>Local Business Hub - All-in-One Platform</title>
     
-    <title>Local Business Hub - All-in-One Platform for Local Businesses</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Fonts & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Primitive Color Tokens */
+            --color-white: rgba(255, 255, 255, 1);
+            --color-black: rgba(0, 0, 0, 1);
+            --color-cream-50: rgba(252, 252, 249, 1);
+            --color-cream-100: rgba(255, 255, 253, 1);
+            --color-gray-200: rgba(245, 245, 245, 1);
+            --color-gray-300: rgba(167, 169, 169, 1);
+            --color-gray-400: rgba(119, 124, 124, 1);
+            --color-slate-500: rgba(98, 108, 113, 1);
+            --color-brown-600: rgba(94, 82, 64, 1);
+            --color-charcoal-700: #1c1e1f;
+            --color-charcoal-800: #252829;
+            --color-slate-900: rgba(19, 52, 59, 1);
+            --color-teal-300: rgba(50, 184, 198, 1);
+            --color-teal-400: rgba(45, 166, 178, 1);
+            --color-teal-500: rgba(33, 128, 141, 1);
+            --color-teal-600: rgba(29, 116, 128, 1);
+            --color-teal-700: rgba(26, 104, 115, 1);
+            --color-red-400: rgba(255, 84, 89, 1);
+            --color-red-500: rgba(192, 21, 47, 1);
+            --color-orange-400: rgba(230, 129, 97, 1);
+            --color-orange-500: rgba(168, 75, 47, 1);
+
+            /* RGB versions for opacity control */
+            --color-brown-600-rgb: 94, 82, 64;
+            --color-teal-500-rgb: 33, 128, 141;
+            --color-slate-900-rgb: 19, 52, 59;
+            --color-slate-500-rgb: 98, 108, 113;
+            --color-red-500-rgb: 192, 21, 47;
+            --color-orange-500-rgb: 168, 75, 47;
+            --color-teal-300-rgb: 50, 184, 198;
+            --color-red-400-rgb: 255, 84, 89;
+            --color-orange-400-rgb: 230, 129, 97;
+            --color-gray-300-rgb: 167, 169, 169;
+            --color-gray-400-rgb: 119, 124, 124;
+
+
+            /* Semantic Color Tokens (Light Mode) */
+            --color-background: var(--color-cream-50);
+            --color-surface: var(--color-cream-100);
+            --color-text: var(--color-slate-900);
+            --color-text-secondary: var(--color-slate-500);
+            --color-primary: var(--color-teal-500);
+            --color-primary-hover: var(--color-teal-600);
+            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-btn-primary-text: var(--color-cream-50);
+            --color-error: var(--color-red-500);
+            --color-success: var(--color-teal-500);
+            --color-warning: var(--color-orange-500);
+            --color-info: var(--color-slate-500);
+            --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+
+            /* RGB versions for opacity control */
+            --color-success-rgb: var(--color-teal-500-rgb);
+            --color-error-rgb: var(--color-red-500-rgb);
+            --color-warning-rgb: var(--color-orange-500-rgb);
+            --color-info-rgb: var(--color-slate-500-rgb);
+            
+            /* Typography */
+            --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-size-sm: 12px;
+            --font-size-base: 14px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+            --font-size-xl: 20px;
+            --font-size-2xl: 24px;
+            --font-size-3xl: 30px;
+            --font-size-4xl: 36px;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+            
+            /* Spacing */
+            --space-8: 8px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+
+            /* Border Radius */
+            --radius-base: 8px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+            /* Animation */
+            --duration-fast: 150ms;
+            --duration-normal: 250ms;
+            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        /* Dark Mode Styles */
+        html[data-theme="dark"] {
+            --color-background: var(--color-charcoal-700);
+            --color-surface: var(--color-charcoal-800);
+            --color-text: var(--color-gray-200);
+            --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+            --color-primary: var(--color-teal-300);
+            --color-primary-hover: var(--color-teal-400);
+            --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+            --color-btn-primary-text: var(--color-slate-900);
+            --color-error: var(--color-red-400);
+            --color-success: var(--color-teal-300);
+            --color-warning: var(--color-orange-400);
+            --color-info: var(--color-gray-300);
+            --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+            
+            --color-success-rgb: var(--color-teal-300-rgb);
+            --color-error-rgb: var(--color-red-400-rgb);
+            --color-warning-rgb: var(--color-orange-400-rgb);
+            --color-info-rgb: var(--color-gray-300-rgb);
+        }
+
+        /* Base styles */
+        html { font-family: var(--font-family-base); color: var(--color-text); background-color: var(--color-background); -webkit-font-smoothing: antialiased; box-sizing: border-box; transition: background-color var(--duration-normal); scroll-behavior: smooth; }
+        body { margin: 0; padding: 0; font-size: var(--font-size-base); }
+        *, *::before, *::after { box-sizing: inherit; }
+        h1, h2, h3, h4 { margin: 0; font-weight: var(--font-weight-semibold); line-height: var(--line-height-tight); color: var(--color-text); }
+        h1 { font-size: var(--font-size-4xl); } h2 { font-size: var(--font-size-3xl); } h3 { font-size: var(--font-size-2xl); }
+        p { margin: 0 0 var(--space-16) 0; color: var(--color-text-secondary); }
+        .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 var(--space-16); }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: var(--space-12) var(--space-20); border-radius: var(--radius-base); font-size: var(--font-size-md); font-weight: var(--font-weight-medium); cursor: pointer; transition: all var(--duration-normal) var(--ease-standard); border: 1px solid transparent; text-decoration: none; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--color-focus-ring); }
+        .btn--primary { background: var(--color-primary); color: var(--color-btn-primary-text); border-color: var(--color-primary); }
+        .btn--primary:hover:not(:disabled) { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+        .btn--outline { background: transparent; border: 1px solid var(--color-border); color: var(--color-text); }
+        .btn--outline:hover:not(:disabled) { background: rgba(var(--color-brown-600-rgb), 0.05); }
+        html[data-theme="dark"] .btn--outline:hover:not(:disabled) { background: rgba(var(--color-gray-400-rgb), 0.1); }
+        .btn--sm { padding: var(--space-8) var(--space-12); font-size: var(--font-size-sm); }
+        .btn--lg { padding: var(--space-16) var(--space-24); font-size: var(--font-size-lg); }
+
+        /* Forms */
+        .form-control { display: block; width: 100%; padding: var(--space-12); font-size: var(--font-size-base); color: var(--color-text); background-color: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-base); transition: all var(--duration-fast); }
+        .form-control:focus { border-color: var(--color-primary); outline: none; box-shadow: 0 0 0 3px var(--color-focus-ring); }
+        .form-control.is-invalid { border-color: var(--color-error); }
+        .form-control.is-valid { border-color: var(--color-success); }
+        .form-group { position: relative; margin-bottom: var(--space-16); }
+        .error-message { color: var(--color-error); font-size: var(--font-size-sm); margin-top: 4px; display: none; }
+        .form-control.is-invalid + .error-message { display: block; }
+        textarea.form-control { min-height: 80px; }
+        .form-label { display: block; margin-bottom: var(--space-8); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+        
+        /* Status indicators */
+        .status { display: inline-flex; align-items: center; padding: 4px var(--space-8); border-radius: var(--radius-full); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+        .status--success { background-color: rgba(var(--color-success-rgb), 0.1); color: var(--color-success); }
+        .status--warning { background-color: rgba(var(--color-warning-rgb), 0.1); color: var(--color-warning); }
+        .status--info { background-color: rgba(var(--color-info-rgb), 0.1); color: var(--color-info); }
+        
+        /* Layout & Components */
+        .view { display: none; min-height: 100vh; padding: 100px 0 var(--space-32); }
+        .view.active { display: block; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .navbar { background: var(--color-surface); border-bottom: 1px solid var(--color-border); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; box-shadow: var(--shadow-sm); transition: background-color var(--duration-normal), border-color var(--duration-normal); }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; padding-top: var(--space-16); padding-bottom: var(--space-16); }
+        .nav-brand { display: flex; align-items: center; gap: var(--space-8); font-weight: var(--font-weight-bold); font-size: var(--font-size-xl); color: var(--color-primary); }
+        .nav-menu { display: flex; gap: var(--space-24); }
+        .nav-link { color: var(--color-text-secondary); font-weight: var(--font-weight-medium); cursor: pointer; padding-bottom: 4px; border-bottom: 2px solid transparent; transition: color var(--duration-fast), border-color var(--duration-fast); }
+        .nav-link:hover, .nav-link.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+        .nav-toggle { display: none; color: var(--color-text); }
+        .nav-actions { display: flex; align-items: center; gap: 16px; }
+        .user-info { font-size: 10px; color: var(--color-text-secondary); background: rgba(var(--color-info-rgb), 0.1); padding: 4px 8px; border-radius: 4px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        .hero { background: rgba(var(--color-teal-500-rgb), 0.05); padding: 64px 0; }
+        html[data-theme="dark"] .hero { background: rgba(var(--color-teal-300-rgb), 0.05); }
+        .hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-32); align-items: center; }
+        .hero-content p { font-size: var(--font-size-lg); max-width: 500px; }
+
+        /* Social Proof Section */
+        .social-proof { padding: 32px 0; text-align: center; }
+        .social-proof-title { font-size: var(--font-size-md); color: var(--color-text-secondary); margin-bottom: 24px; font-weight: var(--font-weight-medium); }
+        .social-proof-logos { display: flex; justify-content: center; align-items: center; gap: 48px; flex-wrap: wrap; }
+        .social-proof-logos i { font-size: 36px; color: var(--color-text-secondary); opacity: 0.7; transition: color var(--duration-normal), opacity var(--duration-normal); }
+        .social-proof-logos i:hover { color: var(--color-text); opacity: 1; }
+
+        /* Redesigned Features Section */
+        .features-section { padding: 64px 0; background: var(--color-surface); transition: background-color var(--duration-normal); }
+        .features-section-header { text-align: center; margin-bottom: 48px; }
+        .features-section-header h2 { margin-bottom: 16px; }
+        .features-section-header p { max-width: 600px; margin: 0 auto; font-size: var(--font-size-lg); }
+        .feature-item-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 48px; }
+        .feature-item-grid:last-child { margin-bottom: 0; }
+        .feature-text h3 { margin-bottom: 16px; font-size: var(--font-size-xl); }
+        .feature-text p { margin-bottom: 0; }
+        .feature-icon-container { font-size: 80px; color: var(--color-primary); text-align: center; }
+        
+        .hero-image { display: flex; align-items: center; justify-content: center; }
+        .hero-mockup { background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-32); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-16); }
+        .hero-mockup i { font-size: 4rem; color: var(--color-primary); }
+        .hero-mockup span { font-weight: var(--font-weight-semibold); color: var(--color-text); }
+
+        .cta-section { padding: 64px 0; background: rgba(var(--color-teal-500-rgb), 0.05); text-align: center; }
+        html[data-theme="dark"] .cta-section { background: rgba(var(--color-teal-300-rgb), 0.05); }
+        .cta-section h2 { margin-bottom: 16px; }
+        .cta-section p { font-size: var(--font-size-lg); margin-bottom: 24px; }
+        
+        .dashboard-header, .pricing-header { text-align: center; margin-bottom: var(--space-32); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-20); margin-bottom: var(--space-32); }
+        .stat-card { background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-20); border: 1px solid var(--color-border); display: flex; align-items: center; gap: var(--space-16); transition: background-color var(--duration-normal), border-color var(--duration-normal); }
+        .stat-content .stat-number { font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold); }
+        .stat-content .stat-label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+
+        .dashboard-modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-20); }
+        .module-card { background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-20); border: 1px solid var(--color-border); cursor: pointer; transition: all var(--duration-fast) ease; position: relative; }
+        .module-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        
+        .tab-btn { background: transparent; border: none; padding: var(--space-12) var(--space-16); font-weight: var(--font-weight-medium); color: var(--color-text-secondary); cursor: pointer; border-bottom: 2px solid transparent; transition: color var(--duration-fast), border-color var(--duration-fast); }
+        .tab-btn.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+        .booking-tabs, .crm-tabs, .reviews-tabs { display: flex; gap: 4px; margin-bottom: var(--space-24); border-bottom: 1px solid var(--color-border); transition: border-color var(--duration-normal); }
+        .tab-content { display: none; } .tab-content.active { display: block; }
+
+        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+        .calendar-day { background: var(--color-surface); border: 1px solid var(--color-border); min-height: 120px; padding: var(--space-8); font-size: var(--font-size-sm); transition: background-color var(--duration-normal), border-color var(--duration-normal); }
+        .calendar-day.other-month { background: var(--color-background); color: var(--color-text-secondary); }
+        .calendar-day .day-number { font-weight: var(--font-weight-bold); }
+        .booking-slot { background: rgba(var(--color-success-rgb), 0.1); color: var(--color-success); padding: 4px; border-radius: 4px; margin-top: 4px; font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-24); }
+        .pricing-card { background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: var(--space-24); transition: background-color var(--duration-normal), border-color var(--duration-normal), box-shadow var(--duration-normal), transform var(--duration-normal); }
+        .pricing-card.featured { border-color: var(--color-primary); box-shadow: var(--shadow-lg); }
+        .feature-item { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8) 0; }
+        .feature-item i { color: var(--color-success); }
+
+        .modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 2000; opacity: 0; visibility: hidden; transition: all var(--duration-normal); }
+        .modal.active { opacity: 1; visibility: visible; }
+        .modal-content { background: var(--color-surface); border-radius: var(--radius-lg); max-width: 500px; width: 90%; box-shadow: var(--shadow-lg); display: flex; flex-direction: column; max-height: 90vh; transition: background-color var(--duration-normal); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; padding: var(--space-20); border-bottom: 1px solid var(--color-border); transition: border-color var(--duration-normal); }
+        .modal-close { background: none; border: none; font-size: var(--font-size-2xl); cursor: pointer; color: var(--color-text); }
+        .modal-body { padding: var(--space-20); overflow-y: auto; }
+        .modal-actions { display: flex; gap: var(--space-12); justify-content: flex-end; padding: var(--space-20); border-top: 1px solid var(--color-border); transition: border-color var(--duration-normal); }
+
+        /* AI & Loading Styles */
+        .ai-result-container { margin-top: var(--space-20); padding: var(--space-16); background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--radius-base); min-height: 100px; white-space: pre-wrap; font-family: monospace; transition: background-color var(--duration-normal), border-color var(--duration-normal); }
+        .btn.loading { position: relative; color: transparent !important; pointer-events: none; }
+        .btn.loading::after { content: ''; position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px; border: 2px solid var(--color-btn-primary-text); border-right-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; }
+        .btn--outline.loading::after { border-left-color: var(--color-primary); border-top-color: var(--color-primary); border-bottom-color: var(--color-primary); }
+        html[data-theme="dark"] .btn--primary.loading::after { border-color: var(--color-slate-900); border-right-color: transparent; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        /* Empty State */
+        .empty-state { text-align: center; padding: var(--space-32); background-color: var(--color-surface); border: 2px dashed var(--color-border); border-radius: var(--radius-lg); }
+        .empty-state i { font-size: 48px; color: var(--color-text-secondary); margin-bottom: var(--space-16); }
+        .empty-state h3 { color: var(--color-text); margin-bottom: var(--space-8); }
+        .empty-state p { color: var(--color-text-secondary); margin-bottom: var(--space-24); }
+
+        /* Toast Notifications */
+        #toast-container { position: fixed; top: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 12px; }
+        .toast { display: flex; align-items: center; padding: 12px 16px; background: var(--color-surface); color: var(--color-text); border-radius: var(--radius-base); box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); transform: translateX(120%); animation: toast-in 0.5s forwards; }
+        .toast.toast-out { animation: toast-out 0.5s forwards; }
+        .toast i { margin-right: 12px; font-size: 18px; }
+        .toast.success { border-left: 4px solid var(--color-success); }
+        .toast.success i { color: var(--color-success); }
+        .toast.error { border-left: 4px solid var(--color-error); }
+        .toast.error i { color: var(--color-error); }
+        .toast.info { border-left: 4px solid var(--color-info); }
+        .toast.info i { color: var(--color-info); }
+        @keyframes toast-in { from { transform: translateX(120%); } to { transform: translateX(0); } }
+        @keyframes toast-out { from { transform: translateX(0); } to { transform: translateX(120%); } }
+
+        /* Footer */
+        .footer { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: 32px 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); transition: background-color var(--duration-normal), border-color var(--duration-normal); }
+        .footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--color-text-secondary); text-decoration: none; }
+        .footer-links a:hover { color: var(--color-primary); }
+        .footer-socials { display: flex; gap: 16px; }
+        .footer-socials a { color: var(--color-text-secondary); font-size: 20px; }
+        .footer-socials a:hover { color: var(--color-primary); }
+
+        /* Website Builder */
+        .website-builder-grid { display: grid; grid-template-columns: 300px 1fr; gap: 24px; }
+        .website-builder-sidebar { background-color: var(--color-surface); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+        .website-builder-preview { background-color: var(--color-surface); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+        .website-preview-header { padding: 48px 24px; background: rgba(var(--color-primary-rgb), 0.1); border-radius: var(--radius-base); text-align: center; }
+        .website-preview-header h2 { font-size: 28px; color: var(--color-text); margin-bottom: 8px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-surface); flex-direction: column; padding: var(--space-16); border-top: 1px solid var(--color-border); }
+            .nav-menu.active { display: flex; }
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content p { margin: 0 auto 16px; }
+            .hero-actions { justify-content: center; }
+            .feature-item-grid { grid-template-columns: 1fr; text-align: center; }
+            .feature-item-grid .feature-icon-container { order: -1; margin-bottom: 16px; }
+            .website-builder-grid { grid-template-columns: 1fr; }
+            #toast-container { right: 50%; transform: translateX(50%); top: 10px; width: calc(100% - 20px); }
+            .footer .container { flex-direction: column; text-align: center; }
+        }
+    </style>
 </head>
 <body>
+    <!-- Full-screen loader -->
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-background); z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 16px;">
+        <i class="fas fa-store" style="color: var(--color-primary); font-size: 48px;"></i>
+        <p style="color: var(--color-text-secondary);">Initializing Local Business Hub...</p>
+    </div>
+    <div id="toast-container"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -41,679 +348,941 @@
                 <span>Local Business Hub</span>
             </div>
             <div class="nav-menu" id="navMenu">
-                <a href="#" class="nav-link active" data-view="home">Home</a>
-                <a href="#" class="nav-link" data-view="dashboard">Dashboard</a>
-                <a href="#" class="nav-link" data-view="website">Website</a>
-                <a href="#" class="nav-link" data-view="booking">Booking</a>
-                <a href="#" class="nav-link" data-view="crm">CRM</a>
-                <a href="#" class="nav-link" data-view="reviews">Reviews</a>
-                <a href="#" class="nav-link" data-view="pricing">Pricing</a>
+                <a class="nav-link" data-view="home">Home</a>
+                <a class="nav-link" data-view="dashboard">Dashboard</a>
+                <a class="nav-link" data-view="website">Website</a>
+                <a class="nav-link" data-view="booking">Booking</a>
+                <a class="nav-link" data-view="crm">CRM</a>
+                <a class="nav-link" data-view="ai-assistant">AI Assistant</a>
+                <a class="nav-link" data-view="pricing">Pricing</a>
             </div>
-            <div class="nav-toggle" id="navToggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <div id="userInfo" class="user-info" style="display: none;"></div>
+                <button id="themeToggle" class="btn btn--outline btn--sm" style="padding: 8px 10px;" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
+            <div class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
-    <!-- Home/Landing Page -->
-    <section id="home" class="view active">
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Everything Your Local Business Needs in One Simple Platform</h1>
-                    <p>Stop juggling multiple tools. Get a website, booking system, customer management, and review tools all in one affordable package designed for local service businesses.</p>
-                    <div class="hero-actions">
-                        <button class="btn btn--primary btn--lg" data-view="dashboard">View Demo</button>
-                        <button class="btn btn--outline btn--lg" data-view="pricing">View Pricing</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-mockup">
-                        <i class="fas fa-desktop"></i>
-                        <span>Your Business Online</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="features-section">
-            <div class="container">
-                <h2>Built Specifically for Local Service Businesses</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-globe"></i>
-                        <h3>Professional Website</h3>
-                        <p>Get online in minutes with templates designed for plumbers, salons, landscapers, and more.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-calendar-check"></i>
-                        <h3>Online Booking</h3>
-                        <p>Let customers book appointments 24/7 while you focus on your business.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-users"></i>
-                        <h3>Customer Management</h3>
-                        <p>Keep track of all your customers, their history, and follow up opportunities.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-star"></i>
-                        <h3>Review Management</h3>
-                        <p>Automatically request reviews and respond to feedback to build your reputation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="market-section">
-            <div class="container">
-                <h2>Join the Growing Market</h2>
-                <div class="market-chart">
-                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/07ffe6c4a9dc5a19fc23dbc351e13d38/278551ad-8fdf-4051-9500-1965a4a45cd4/7b1e2dae.png" alt="Market Growth Analysis" />
-                </div>
-            </div>
-        </div>
-
-        <div class="cta-section">
-            <div class="container">
-                <h2>Ready to Grow Your Business?</h2>
-                <p>Join thousands of local businesses already using our platform</p>
-                <button class="btn btn--primary btn--lg" data-view="pricing">Start Free Trial</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dashboard -->
-    <section id="dashboard" class="view">
-        <div class="container">
-            <div class="dashboard-header">
-                <h1>Mike's Plumbing Services Dashboard</h1>
-                <p>Denver, CO • (303) 555-0123</p>
-            </div>
-
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <i class="fas fa-calendar-check"></i>
-                    <div class="stat-content">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">Bookings This Week</span>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-users"></i>
-                    <div class="stat-content">
-                        <span class="stat-number">127</span>
-                        <span class="stat-label">Total Customers</span>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-star"></i>
-                    <div class="stat-content">
-                        <span class="stat-number">4.9</span>
-                        <span class="stat-label">Avg. Rating</span>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-dollar-sign"></i>
-                    <div class="stat-content">
-                        <span class="stat-number">$2,850</span>
-                        <span class="stat-label">Monthly Revenue</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dashboard-modules">
-                <div class="module-card" data-view="website">
-                    <i class="fas fa-globe"></i>
-                    <h3>Website Builder</h3>
-                    <p>Update your website and add new pages</p>
-                    <span class="module-status status--success">Active</span>
-                </div>
-                <div class="module-card" data-view="booking">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Booking System</h3>
-                    <p>Manage appointments and services</p>
-                    <span class="module-status status--success">2 New Bookings</span>
-                </div>
-                <div class="module-card" data-view="crm">
-                    <i class="fas fa-users"></i>
-                    <h3>Customer Management</h3>
-                    <p>Track customers and leads</p>
-                    <span class="module-status status--info">3 Follow-ups</span>
-                </div>
-                <div class="module-card" data-view="reviews">
-                    <i class="fas fa-star"></i>
-                    <h3>Review Management</h3>
-                    <p>Request and manage reviews</p>
-                    <span class="module-status status--warning">1 Response Needed</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Website Builder -->
-    <section id="website" class="view">
-        <div class="container">
-            <h1>Website Builder</h1>
-            <div class="website-builder">
-                <div class="builder-sidebar">
-                    <div class="template-section">
-                        <h3>Templates</h3>
-                        <div class="template-grid">
-                            <div class="template-card active" data-template="plumber">
-                                <i class="fas fa-wrench"></i>
-                                <span>Plumber</span>
-                            </div>
-                            <div class="template-card" data-template="salon">
-                                <i class="fas fa-cut"></i>
-                                <span>Salon</span>
-                            </div>
-                            <div class="template-card" data-template="landscaper">
-                                <i class="fas fa-seedling"></i>
-                                <span>Landscaper</span>
-                            </div>
-                            <div class="template-card" data-template="bakery">
-                                <i class="fas fa-birthday-cake"></i>
-                                <span>Bakery</span>
-                            </div>
+    <!-- App Views -->
+    <main id="app-container" style="display: none;">
+        <!-- Home/Landing Page -->
+        <section id="home" class="view">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Your AI-Powered Front Desk: Manages Bookings, Clients, and Marketing—So You Can Do the Real Work.</h1>
+                        <p>Stop juggling apps. Get an all-in-one platform that automates your admin and writes your marketing content for you. All data is saved in real-time.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn--primary btn--lg" data-view="dashboard">View Dashboard</button>
+                            <button class="btn btn--outline btn--lg" data-view="pricing">View Pricing</button>
                         </div>
                     </div>
-                    <div class="customization-section">
-                        <h3>Customize</h3>
+                    <div class="hero-image">
+                        <div class="hero-mockup">
+                            <i class="fas fa-desktop"></i>
+                            <span>Your Business Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-proof">
+                <div class="container">
+                    <p class="social-proof-title">Trusted by businesses on platforms you know and love</p>
+                    <div class="social-proof-logos">
+                        <i class="fab fa-google" title="Google"></i>
+                        <i class="fab fa-yelp" title="Yelp"></i>
+                        <i class="fab fa-facebook" title="Facebook"></i>
+                        <i class="fab fa-instagram" title="Instagram"></i>
+                        <i class="fab fa-nextdoor" title="Nextdoor"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="container">
+                    <div class="features-section-header">
+                        <h2>An All-in-One Toolkit to Run Your Business</h2>
+                        <p>From getting the word out to getting paid, our platform handles the tedious work so you can focus on your craft.</p>
+                    </div>
+
+                    <div class="feature-item-grid">
+                        <div class="feature-text">
+                            <h3>Online Booking That Works for You</h3>
+                            <p>Set your availability and let customers book appointments online 24/7. Reduce no-shows with automated reminders and manage your schedule effortlessly from one calendar.</p>
+                        </div>
+                        <div class="feature-icon-container">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-grid">
+                         <div class="feature-icon-container">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Know Your Customers</h3>
+                            <p>Keep all your client information in one place. Track appointment history, send targeted marketing emails with our AI assistant, and build lasting customer relationships.</p>
+                        </div>
+                    </div>
+
+                     <div class="feature-item-grid">
+                        <div class="feature-text">
+                            <h3>AI-Powered Marketing Magic</h3>
+                            <p>Struggling with what to post on social media? Our AI Assistant generates slogans, email campaigns, and social media posts in seconds. No writing skills required.</p>
+                        </div>
+                        <div class="feature-icon-container">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="container">
+                    <h2>Ready to Grow Your Business?</h2>
+                    <p>Join thousands of local businesses already using our platform.</p>
+                    <button class="btn btn--primary btn--lg" data-view="pricing">Start Your Free Trial</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="view">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1 id="dashboardBusinessName">Your Business Dashboard</h1>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><i class="fas fa-calendar-check"></i><div class="stat-content"><span id="statsBookings" class="stat-number">0</span><span class="stat-label">Total Bookings</span></div></div>
+                    <div class="stat-card"><i class="fas fa-users"></i><div class="stat-content"><span id="statsCustomers" class="stat-number">0</span><span class="stat-label">Total Customers</span></div></div>
+                    <div class="stat-card"><i class="fas fa-star"></i><div class="stat-content"><span id="statsReviews" class="stat-number">0</span><span class="stat-label">Total Reviews</span></div></div>
+                    <div class="stat-card"><i class="fas fa-wrench"></i><div class="stat-content"><span id="statsServices" class="stat-number">0</span><span class="stat-label">Services Offered</span></div></div>
+                </div>
+                <div class="dashboard-modules">
+                    <div class="module-card" data-view="website"><i class="fas fa-globe"></i><h3>Website Builder</h3><p>Manage your business profile</p></div>
+                    <div class="module-card" data-view="booking"><i class="fas fa-calendar-check"></i><h3>Booking System</h3><p>Manage appointments and services</p></div>
+                    <div class="module-card" data-view="crm"><i class="fas fa-users"></i><h3>Customer Management</h3><p>Track customers and leads</p></div>
+                    <div class="module-card" data-view="ai-assistant"><i class="fas fa-star"></i><h3>AI Assistant</h3><p>Generate marketing copy and ideas</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Website Builder -->
+        <section id="website" class="view">
+            <div class="container">
+                <h1>Website Builder</h1>
+                <p>Manage your public-facing business information.</p>
+
+                <div class="website-builder-grid">
+                    <div class="website-builder-sidebar">
+                        <h3>Business Profile</h3>
                         <div class="form-group">
-                            <label class="form-label">Business Name</label>
-                            <input type="text" class="form-control" value="Mike's Plumbing Services" id="businessName">
+                            <label class="form-label" for="websiteBusinessName">Business Name</label>
+                            <input type="text" id="websiteBusinessName" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <label class="form-label">Primary Color</label>
-                            <input type="color" class="form-control color-input" value="#1d74a4" id="primaryColor">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Phone</label>
-                            <input type="text" class="form-control" value="(303) 555-0123" id="businessPhone">
-                        </div>
+                        <button id="saveWebsiteBtn" class="btn btn--primary" style="width: 100%;">Save Changes</button>
                     </div>
-                </div>
-                <div class="builder-preview">
-                    <div class="preview-header">
-                        <span>Preview</span>
-                        <button class="btn btn--sm btn--primary">Publish</button>
-                    </div>
-                    <div class="website-preview">
-                        <div class="preview-site">
-                            <div class="preview-header-section">
-                                <h2 id="previewBusinessName">Mike's Plumbing Services</h2>
-                                <p>Professional Plumbing Services in Denver, CO</p>
-                                <span id="previewPhone">(303) 555-0123</span>
-                            </div>
-                            <div class="preview-services">
-                                <h3>Our Services</h3>
-                                <div class="service-list">
-                                    <div class="service-item">Emergency Repairs</div>
-                                    <div class="service-item">Drain Cleaning</div>
-                                    <div class="service-item">Water Heater Installation</div>
-                                </div>
-                            </div>
+                    <div class="website-builder-preview">
+                        <h3>Live Preview</h3>
+                        <div class="website-preview-header">
+                            <h2 id="previewBusinessName">Your Business Name</h2>
+                            <p>Your future website header will appear here.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Booking System -->
-    <section id="booking" class="view">
+
+        <!-- AI Assistant -->
+        <section id="ai-assistant" class="view">
+            <div class="container">
+                <h1>✨ AI Assistant</h1>
+                <p>Supercharge your business with AI-powered tools.</p>
+                <div class="module-card" style="cursor: default; margin-bottom: 24px;">
+                     <h3>Marketing Slogan Generator</h3>
+                     <p>Generate catchy slogans for your business.</p>
+                     <div class="form-group">
+                        <label class="form-label">Your Business Name</label>
+                        <input type="text" class="form-control" id="sloganBusinessName">
+                     </div>
+                     <button class="btn btn--primary" id="generateSloganBtn">Generate Slogans</button>
+                     <div id="sloganResult" class="ai-result-container"></div>
+                </div>
+
+                <div class="module-card" style="cursor: default;">
+                    <h3>Social Media Post Generator</h3>
+                    <p>Create engaging posts to promote your services.</p>
+                    <div class="form-group">
+                       <label class="form-label">Select a Service to Promote</label>
+                       <select class="form-control" id="socialPostServiceSelect"></select>
+                    </div>
+                     <div class="form-group">
+                       <label class="form-label">Choose a Tone</label>
+                       <select class="form-control" id="socialPostToneSelect">
+                           <option>Professional</option>
+                           <option>Friendly</option>
+                           <option>Urgent</option>
+                           <option>Inspirational</option>
+                       </select>
+                    </div>
+                    <button class="btn btn--primary" id="generateSocialPostBtn">Generate Post</button>
+                    <div id="socialPostResult" class="ai-result-container"></div>
+               </div>
+            </div>
+        </section>
+
+        <!-- Booking System -->
+        <section id="booking" class="view">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                    <h1>Booking System</h1>
+                    <button class="btn btn--primary" id="addServiceBtn">Add Service</button>
+                </div>
+                <div class="booking-tabs">
+                    <button class="tab-btn active" data-tab="calendar">Calendar</button>
+                    <button class="tab-btn" data-tab="services">Services</button>
+                </div>
+                <div class="tab-content active" id="calendar">
+                    <div id="calendar-container"></div>
+                </div>
+                <div class="tab-content" id="services">
+                    <div id="services-list" style="display: grid; gap: 16px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CRM -->
+        <section id="crm" class="view">
+            <div class="container">
+                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 16px;">
+                    <h1>Customer Management</h1>
+                    <div>
+                        <button class="btn btn--primary" id="generateMarketingEmailBtn" style="margin-right: 8px;">✨ Generate Marketing Email</button>
+                        <button class="btn btn--primary" id="addCustomerBtn">Add Customer</button>
+                    </div>
+                </div>
+                <div id="customers-list" style="display: grid; gap: 16px;"></div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="view">
+            <div class="container">
+                 <div class="pricing-header">
+                    <h1>Simple, Transparent Pricing</h1>
+                    <p>Choose the plan that's right for your business.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3><div class="price"><span>$29</span><span>/mo</span></div>
+                        <div class="pricing-features">
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Simple Website</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Online Booking</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Basic Customer List</span></div>
+                        </div><button class="btn btn--outline" style="width: 100%;">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <h3>Pro</h3><div class="price"><span>$59</span><span>/mo</span></div>
+                         <div class="pricing-features">
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Professional Website</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Advanced Booking</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Full CRM</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Review Management</span></div>
+                        </div><button class="btn btn--primary" style="width: 100%;">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Premium</h3><div class="price"><span>$99</span><span>/mo</span></div>
+                         <div class="pricing-features">
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Custom Website</span></div>
+                            <div class="feature-item"><i class="fas fa-check"></i><span>Advanced Analytics</span></div>
+                             <div class="feature-item"><i class="fas fa-check"></i><span>API Access</span></div>
+                        </div><button class="btn btn--outline" style="width: 100%;">Start Free Trial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <div class="booking-header">
-                <h1>Booking System</h1>
-                <button class="btn btn--primary" id="addServiceBtn">Add Service</button>
+            <p>&copy; 2025 Local Business Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
             </div>
-            
-            <div class="booking-tabs">
-                <button class="tab-btn active" data-tab="calendar">Calendar</button>
-                <button class="tab-btn" data-tab="services">Services</button>
-                <button class="tab-btn" data-tab="bookings">Bookings</button>
-            </div>
-
-            <div class="tab-content active" id="calendar">
-                <div class="calendar-view">
-                    <div class="calendar-header">
-                        <h3>October 2024</h3>
-                        <div class="calendar-nav">
-                            <button class="btn btn--sm btn--outline"><i class="fas fa-chevron-left"></i></button>
-                            <button class="btn btn--sm btn--outline"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="calendar-grid">
-                        <div class="calendar-day">
-                            <span class="day-number">15</span>
-                            <div class="booking-slot">09:00 - Sarah J.</div>
-                        </div>
-                        <div class="calendar-day">
-                            <span class="day-number">16</span>
-                            <div class="booking-slot">14:00 - Robert C.</div>
-                        </div>
-                        <div class="calendar-day">
-                            <span class="day-number">17</span>
-                            <span class="available">Available</span>
-                        </div>
-                        <div class="calendar-day">
-                            <span class="day-number">18</span>
-                            <span class="available">Available</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="services">
-                <div class="services-list">
-                    <div class="service-card">
-                        <h4>Emergency Repair</h4>
-                        <p>24/7 emergency plumbing repairs</p>
-                        <div class="service-details">
-                            <span>60 min • $150</span>
-                            <button class="btn btn--sm btn--outline">Edit</button>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <h4>Drain Cleaning</h4>
-                        <p>Professional drain cleaning service</p>
-                        <div class="service-details">
-                            <span>45 min • $120</span>
-                            <button class="btn btn--sm btn--outline">Edit</button>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <h4>Water Heater Installation</h4>
-                        <p>Complete water heater installation</p>
-                        <div class="service-details">
-                            <span>180 min • $450</span>
-                            <button class="btn btn--sm btn--outline">Edit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="bookings">
-                <div class="bookings-list">
-                    <div class="booking-item">
-                        <div class="booking-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Drain Cleaning • Oct 15, 2024 at 9:00 AM</p>
-                        </div>
-                        <div class="booking-status">
-                            <span class="status status--success">Confirmed</span>
-                        </div>
-                    </div>
-                    <div class="booking-item">
-                        <div class="booking-info">
-                            <h4>Robert Chen</h4>
-                            <p>Emergency Repair • Oct 16, 2024 at 2:00 PM</p>
-                        </div>
-                        <div class="booking-status">
-                            <span class="status status--warning">Pending</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- CRM -->
-    <section id="crm" class="view">
-        <div class="container">
-            <div class="crm-header">
-                <h1>Customer Management</h1>
-                <div class="crm-actions">
-                    <input type="text" class="form-control" placeholder="Search customers..." id="customerSearch">
-                    <button class="btn btn--primary">Add Customer</button>
-                </div>
-            </div>
-
-            <div class="crm-tabs">
-                <button class="tab-btn active" data-tab="customers">Customers</button>
-                <button class="tab-btn" data-tab="leads">Leads</button>
-                <button class="tab-btn" data-tab="analytics">Analytics</button>
-            </div>
-
-            <div class="tab-content active" id="customers">
-                <div class="customers-list">
-                    <div class="customer-card">
-                        <div class="customer-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="customer-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>sarah@email.com • (303) 555-0111</p>
-                            <p class="customer-address">123 Oak St, Denver, CO</p>
-                        </div>
-                        <div class="customer-stats">
-                            <span class="stat">$285 Total</span>
-                            <span class="status status--success">Active</span>
-                        </div>
-                        <button class="btn btn--sm btn--outline customer-details-btn" data-customer="1">View Details</button>
-                    </div>
-                    
-                    <div class="customer-card">
-                        <div class="customer-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="customer-info">
-                            <h4>Maria Rodriguez</h4>
-                            <p>maria@email.com • (303) 555-0333</p>
-                            <p class="customer-address">Regular maintenance customer</p>
-                        </div>
-                        <div class="customer-stats">
-                            <span class="stat">$420 Total</span>
-                            <span class="status status--success">Active</span>
-                        </div>
-                        <button class="btn btn--sm btn--outline customer-details-btn" data-customer="3">View Details</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="leads">
-                <div class="leads-list">
-                    <div class="lead-card">
-                        <div class="lead-info">
-                            <h4>Robert Chen</h4>
-                            <p>robert@email.com • (303) 555-0222</p>
-                            <p class="lead-source">Source: Google Search</p>
-                        </div>
-                        <div class="lead-status">
-                            <span class="status status--info">New Lead</span>
-                        </div>
-                        <div class="lead-notes">
-                            <p>Kitchen renovation project</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="analytics">
-                <div class="analytics-grid">
-                    <div class="analytics-card">
-                        <h4>Customer Retention</h4>
-                        <div class="metric-value">89%</div>
-                        <p>6-month retention rate</p>
-                    </div>
-                    <div class="analytics-card">
-                        <h4>Average Customer Value</h4>
-                        <div class="metric-value">$275</div>
-                        <p>Per customer lifetime</p>
-                    </div>
-                    <div class="analytics-card">
-                        <h4>Lead Conversion</h4>
-                        <div class="metric-value">34%</div>
-                        <p>Lead to customer rate</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="view">
-        <div class="container">
-            <h1>Review Management</h1>
-            
-            <div class="reviews-tabs">
-                <button class="tab-btn active" data-tab="review-requests">Requests</button>
-                <button class="tab-btn" data-tab="review-display">Reviews</button>
-                <button class="tab-btn" data-tab="review-responses">Responses</button>
-            </div>
-
-            <div class="tab-content active" id="review-requests">
-                <div class="request-section">
-                    <h3>Automated Review Requests</h3>
-                    <div class="request-settings">
-                        <div class="setting-item">
-                            <label>Send review request after job completion</label>
-                            <input type="checkbox" checked>
-                        </div>
-                        <div class="setting-item">
-                            <label>Send SMS reminders</label>
-                            <input type="checkbox" checked>
-                        </div>
-                    </div>
-                    <button class="btn btn--primary">Send Custom Request</button>
-                </div>
-            </div>
-
-            <div class="tab-content" id="review-display">
-                <div class="reviews-list">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="review-platform">Google</span>
-                        </div>
-                        <div class="review-content">
-                            <p>"Excellent service! Mike was professional and fixed our drain quickly."</p>
-                            <div class="review-author">- Sarah Johnson</div>
-                            <div class="review-date">September 15, 2024</div>
-                        </div>
-                    </div>
-                    
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="review-platform">Yelp</span>
-                        </div>
-                        <div class="review-content">
-                            <p>"Always reliable and fair pricing. Highly recommend!"</p>
-                            <div class="review-author">- Maria Rodriguez</div>
-                            <div class="review-date">September 10, 2024</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-content" id="review-responses">
-                <div class="responses-section">
-                    <h3>Review Response Templates</h3>
-                    <div class="template-list">
-                        <div class="template-item">
-                            <h4>Positive Review Response</h4>
-                            <p>"Thank you for taking the time to leave such a wonderful review! We're thrilled that you were satisfied with our service."</p>
-                            <button class="btn btn--sm btn--outline">Edit</button>
-                        </div>
-                        <div class="template-item">
-                            <h4>Negative Review Response</h4>
-                            <p>"We sincerely apologize for your experience. Please contact us directly so we can make this right."</p>
-                            <button class="btn btn--sm btn--outline">Edit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="view">
-        <div class="container">
-            <div class="pricing-header">
-                <h1>Simple, Transparent Pricing</h1>
-                <p>Choose the plan that's right for your business. All plans include a 14-day free trial.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header-card">
-                        <h3>Basic</h3>
-                        <div class="price">
-                            <span class="price-amount">$29</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Simple Website</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Online Booking</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Basic Customer List</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Email Support</span>
-                        </div>
-                    </div>
-                    <button class="btn btn--outline btn--full-width">Start Free Trial</button>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-header-card">
-                        <h3>Pro</h3>
-                        <div class="price">
-                            <span class="price-amount">$59</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Professional Website</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced Booking</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Full CRM</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Review Management</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>SMS Notifications</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Priority Support</span>
-                        </div>
-                    </div>
-                    <button class="btn btn--primary btn--full-width">Start Free Trial</button>
-                </div>
-
-                <div class="pricing-card">
-                    <div class="pricing-header-card">
-                        <h3>Premium</h3>
-                        <div class="price">
-                            <span class="price-amount">$99</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Custom Website</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced Analytics</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Social Media Scheduling</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>API Access</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Phone Support</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check"></i>
-                            <span>Custom Integrations</span>
-                        </div>
-                    </div>
-                    <button class="btn btn--outline btn--full-width">Start Free Trial</button>
-                </div>
-            </div>
-
-            <div class="pricing-faq">
-                <h3>Frequently Asked Questions</h3>
-                <div class="faq-item">
-                    <h4>Can I change plans anytime?</h4>
-                    <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Is there a setup fee?</h4>
-                    <p>No, there are no setup fees or hidden costs. The price you see is what you pay.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer Detail Modal -->
-    <div class="modal hidden" id="customerModal">
+    <!-- Modals -->
+    <div class="modal" id="serviceModal">
         <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modalCustomerName">Customer Details</h3>
-                <button class="modal-close" id="closeModal">&times;</button>
-            </div>
-            <div class="modal-body" id="modalCustomerDetails">
-                <!-- Customer details will be populated here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Service Modal -->
-    <div class="modal hidden" id="serviceModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Add New Service</h3>
-                <button class="modal-close" id="closeServiceModal">&times;</button>
-            </div>
+            <div class="modal-header"><h3 id="serviceModalTitle">Add New Service</h3><button class="modal-close">&times;</button></div>
             <div class="modal-body">
-                <form id="serviceForm">
-                    <div class="form-group">
-                        <label class="form-label">Service Name</label>
-                        <input type="text" class="form-control" id="serviceName" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Duration (minutes)</label>
-                        <input type="number" class="form-control" id="serviceDuration" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Price ($)</label>
-                        <input type="number" class="form-control" id="servicePrice" required>
-                    </div>
+                <form id="serviceForm" novalidate>
+                    <input type="hidden" id="serviceId">
+                    <div class="form-group"><label class="form-label">Service Name</label><input type="text" class="form-control" id="serviceName" required><div class="error-message">Service name is required.</div></div>
+                    <div class="form-group"><label class="form-label">Duration (minutes)</label><input type="number" class="form-control" id="serviceDuration" required min="1"><div class="error-message">Please enter a valid duration.</div></div>
+                    <div class="form-group"><label class="form-label">Price ($)</label><input type="number" class="form-control" id="servicePrice" required min="0"><div class="error-message">Please enter a valid price.</div></div>
                     <div class="form-group">
                         <label class="form-label">Description</label>
-                        <textarea class="form-control" id="serviceDescription" rows="3"></textarea>
-                    </div>
-                    <div class="modal-actions">
-                        <button type="button" class="btn btn--outline" id="cancelService">Cancel</button>
-                        <button type="submit" class="btn btn--primary">Add Service</button>
+                        <div style="display: flex; align-items: flex-start; gap: 8px;">
+                            <textarea class="form-control" id="serviceDescription" rows="3"></textarea>
+                            <button type="button" class="btn btn--outline" id="generateDescriptionBtn" title="Generate with AI" style="padding: 12px;">✨</button>
+                        </div>
                     </div>
                 </form>
             </div>
+            <div class="modal-actions">
+                <button class="btn btn--outline modal-close">Cancel</button>
+                <button class="btn btn--primary" id="saveServiceBtn" disabled>Save Service</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="customerModal">
+        <div class="modal-content">
+            <div class="modal-header"><h3 id="customerModalTitle">Add New Customer</h3><button class="modal-close">&times;</button></div>
+            <div class="modal-body">
+                <form id="customerForm" novalidate>
+                    <input type="hidden" id="customerId">
+                    <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-control" id="customerName" required><div class="error-message">Customer name is required.</div></div>
+                    <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-control" id="customerEmail" required><div class="error-message">Please enter a valid email address.</div></div>
+                    <div class="form-group"><label class="form-label">Phone</label><input type="tel" class="form-control" id="customerPhone"></div>
+                </form>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn--outline modal-close">Cancel</button>
+                <button class="btn btn--primary" id="saveCustomerBtn" disabled>Save Customer</button>
+            </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <div class="modal" id="aiResultModal">
+        <div class="modal-content">
+            <div class="modal-header"><h3 id="aiResultModalTitle">AI Generated Content</h3><button class="modal-close">&times;</button></div>
+            <div class="modal-body" id="aiResultModalBody" style="white-space: pre-wrap; background: var(--color-background); border-radius: var(--radius-base);">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn--outline modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="confirmModal">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header"><h3 id="confirmModalTitle">Are you sure?</h3><button class="modal-close">&times;</button></div>
+            <div class="modal-body" id="confirmModalBody">
+                This action cannot be undone.
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn--outline modal-close">Cancel</button>
+                <button class="btn btn--primary" id="confirmModalBtn" style="background-color: var(--color-error); border-color: var(--color-error);">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, onSnapshot, collection, addDoc, deleteDoc, writeBatch, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+        // --- App State ---
+        const appState = {
+            userId: null,
+            businessName: "Your Business",
+            services: [],
+            customers: [],
+        };
+        let currentView = 'home';
+        let db, auth;
+        let unsubscribeListeners = [];
+        
+        // --- Initial Demo Data ---
+        const demoData = {
+            business: { name: "Mike's Plumbing Services" },
+            services: [
+                { name: "Emergency Repair", duration: 60, price: 150, description: "Fast, reliable 24/7 emergency repairs to fix your plumbing problems right away." },
+                { name: "Drain Cleaning", duration: 45, price: 120, description: "Professional drain cleaning to clear clogs and restore flow in your pipes." },
+                { name: "Water Heater Installation", duration: 180, price: 450, description: "Expert installation of new, energy-efficient water heaters for your home." }
+            ],
+            customers: [
+                { name: "Sarah Johnson", email: "sarah@email.com", phone: "(303) 555-0111" },
+                { name: "Robert Chen", email: "robert@email.com", phone: "(303) 555-0222" },
+            ],
+            reviews: [
+                { customer: "Sarah Johnson", rating: 5, text: "Excellent service!" },
+            ]
+        };
+
+        // --- Gemini API Call ---
+        async function callGemini(prompt, buttonEl = null) {
+            if (buttonEl) {
+                buttonEl.classList.add('loading');
+                buttonEl.disabled = true;
+            }
+
+            const apiKey = ""; // API key is handled by the environment
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const payload = { contents: [{ parts: [{ text: prompt }] }] };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API request failed with status ${response.status}`);
+                }
+
+                const result = await response.json();
+                const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+                return text || "No content generated.";
+            } catch (error) {
+                console.error("Gemini API call failed:", error);
+                showToast("Sorry, there was an error generating content.", "error");
+                return "";
+            } finally {
+                if (buttonEl) {
+                    buttonEl.classList.remove('loading');
+                    buttonEl.disabled = false;
+                }
+            }
+        }
+
+        // --- Firebase Initialization ---
+        async function initializeFirebase() {
+            const firebaseConfig = JSON.parse(
+              typeof __firebase_config !== "undefined"
+                ? __firebase_config
+                : '{"apiKey": "DEMO_KEY","authDomain": "your-project.firebaseapp.com","projectId": "your-project-id"}'
+            );
+            
+            const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+
+            const app = initializeApp(firebaseConfig);
+            db = getFirestore(app);
+            auth = getAuth(app);
+
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    appState.userId = user.uid;
+                    document.getElementById('userInfo').textContent = `ID: ${user.uid.substring(0, 8)}...`;
+                    document.getElementById('userInfo').style.display = 'block';
+
+                    await checkAndSeedData(appId, user.uid);
+                    setupRealtimeListeners(appId, user.uid);
+                    
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('app-container').style.display = 'block';
+                    const initialView = window.location.hash.substring(1) || 'home';
+                    showView(initialView);
+                }
+            });
+
+            if (typeof __initial_auth_token !== "undefined" && __initial_auth_token) {
+              try {
+                await signInWithCustomToken(auth, __initial_auth_token);
+              } catch (error) {
+                console.error("Custom token sign-in failed, falling back to anonymous", error);
+                await signInAnonymously(auth);
+              }
+            } else {
+              await signInAnonymously(auth);
+            }
+        }
+
+        async function checkAndSeedData(appId, userId) {
+            const businessDocRef = doc(db, `artifacts/${appId}/users/${userId}/business/profile`);
+            const businessDoc = await getDoc(businessDocRef);
+
+            if (!businessDoc.exists()) {
+                const batch = writeBatch(db);
+                batch.set(businessDocRef, demoData.business);
+                demoData.services.forEach(s => batch.set(doc(collection(db, `artifacts/${appId}/users/${userId}/services`)), s));
+                demoData.customers.forEach c => batch.set(doc(collection(db, `artifacts/${appId}/users/${userId}/customers`)), c);
+                demoData.reviews.forEach r => batch.set(doc(collection(db, `artifacts/${appId}/users/${userId}/reviews`)), r);
+                await batch.commit();
+            }
+        }
+
+        function setupRealtimeListeners(appId, userId) {
+            unsubscribeListeners.forEach(unsub => unsub());
+            unsubscribeListeners = [];
+
+            const businessSub = onSnapshot(doc(db, `artifacts/${appId}/users/${userId}/business/profile`), (doc) => {
+                if (doc.exists()) {
+                    const businessData = doc.data();
+                    appState.businessName = businessData.name;
+                    // Update UI elements that display business name
+                    document.getElementById('dashboardBusinessName').textContent = `${businessData.name}'s Dashboard`;
+                    document.getElementById('sloganBusinessName').value = businessData.name;
+                    document.getElementById('websiteBusinessName').value = businessData.name;
+                    document.getElementById('previewBusinessName').textContent = businessData.name;
+                }
+            });
+            
+            const servicesSub = onSnapshot(collection(db, `artifacts/${appId}/users/${userId}/services`), (snapshot) => {
+                appState.services = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                renderServices(appState.services);
+                document.getElementById('statsServices').textContent = appState.services.length;
+            });
+            
+            const customersSub = onSnapshot(collection(db, `artifacts/${appId}/users/${userId}/customers`), (snapshot) => {
+                appState.customers = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                renderCustomers(appState.customers);
+                document.getElementById('statsCustomers').textContent = appState.customers.length;
+            });
+            
+            const reviewsSub = onSnapshot(collection(db, `artifacts/${appId}/users/${userId}/reviews`), (snapshot) => {
+                document.getElementById('statsReviews').textContent = snapshot.size;
+            });
+            
+            const bookingsSub = onSnapshot(collection(db, `artifacts/${appId}/users/${userId}/bookings`), (snapshot) => {
+                document.getElementById('statsBookings').textContent = snapshot.size;
+            });
+
+            unsubscribeListeners.push(businessSub, servicesSub, customersSub, reviewsSub, bookingsSub);
+        }
+
+        // --- Render Functions ---
+        function renderServices(services) {
+            const list = document.getElementById('services-list');
+            if (!list) return;
+            if (services.length === 0) {
+                list.innerHTML = `<div class="empty-state">
+                    <i class="fas fa-wrench"></i>
+                    <h3>No Services Yet</h3>
+                    <p>Add your first service to get started.</p>
+                    <button class="btn btn--primary" id="emptyAddServiceBtn">Add Service</button>
+                </div>`;
+                document.getElementById('emptyAddServiceBtn').addEventListener('click', () => openServiceModal());
+            } else {
+                 list.innerHTML = services.map(s => `
+                    <div class="stat-card" style="flex-direction: column; align-items: stretch;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3>${s.name}</h3>
+                            <span class="status status--info">$${s.price}</span>
+                        </div>
+                        <p style="margin-bottom: 8px;">Duration: ${s.duration} minutes</p>
+                        <p style="font-size: 12px; font-style: italic; margin-bottom: 16px;">${s.description || 'No description provided.'}</p>
+                        <div style="display: flex; gap: 8px; justify-content: flex-end;">
+                            <button class="btn btn--outline btn--sm edit-service-btn" data-id="${s.id}">Edit</button>
+                            <button class="btn btn--outline btn--sm delete-btn" data-type="service" data-id="${s.id}" style="color: var(--color-error); border-color: var(--color-error);">Delete</button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            const socialSelect = document.getElementById('socialPostServiceSelect');
+            if (socialSelect) {
+                if (services.length > 0) {
+                    socialSelect.innerHTML = services.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+                } else {
+                    socialSelect.innerHTML = '<option>No services available</option>';
+                }
+            }
+        }
+        
+        function renderCustomers(customers) {
+            const list = document.getElementById('customers-list');
+            if(!list) return;
+            if (customers.length === 0) {
+                 list.innerHTML = `<div class="empty-state">
+                    <i class="fas fa-users"></i>
+                    <h3>No Customers Yet</h3>
+                    <p>Add your first customer to build your client list.</p>
+                    <button class="btn btn--primary" id="emptyAddCustomerBtn">Add Customer</button>
+                </div>`;
+                document.getElementById('emptyAddCustomerBtn').addEventListener('click', () => openCustomerModal());
+            } else {
+                 list.innerHTML = customers.map(c => `
+                     <div class="stat-card">
+                        <i class="fas fa-user" style="font-size: 24px; color: var(--color-primary);"></i>
+                        <div class="stat-content" style="flex-grow: 1;">
+                            <span class="stat-number" style="font-size: 18px;">${c.name}</span>
+                            <span class="stat-label">${c.email} | ${c.phone || 'N/A'}</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="btn btn--outline btn--sm edit-customer-btn" data-id="${c.id}">Edit</button>
+                            <button class="btn btn--outline btn--sm delete-btn" data-type="customer" data-id="${c.id}" style="color: var(--color-error); border-color: var(--color-error);">Delete</button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+        
+        function initApp() {
+            initializeFirebase();
+            initNavigation();
+            initTheme();
+            initTabs();
+            initModals();
+            initAITools();
+            initForms();
+            initWebsiteBuilder();
+            renderCalendar();
+        }
+
+        function initNavigation() {
+            document.querySelector('.navbar').addEventListener('click', (e) => {
+                if (e.target.matches('.nav-link, [data-view]')) {
+                    e.preventDefault();
+                    const viewName = e.target.getAttribute('data-view');
+                    if (viewName) showView(viewName);
+                }
+            });
+            document.getElementById('navToggle').addEventListener('click', () => {
+                document.getElementById('navMenu').classList.toggle('active');
+            });
+        }
+        
+        function showView(viewName) {
+            if (!viewName || !document.getElementById(viewName)) return;
+            document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+            document.getElementById(viewName)?.classList.add('active');
+            currentView = viewName;
+            document.querySelectorAll('.nav-link').forEach(l => {
+                l.classList.toggle('active', l.getAttribute('data-view') === viewName);
+            });
+            if (window.location.hash !== `#${viewName}`) {
+                window.history.pushState({view: viewName}, '', `#${viewName}`);
+            }
+        }
+        
+        function initTabs() {
+            document.addEventListener('click', (e) => {
+                if (e.target.matches('.tab-btn')) {
+                    const tabContainer = e.target.closest('.view');
+                    tabContainer.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    tabContainer.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    tabContainer.querySelector(`#${e.target.dataset.tab}`).classList.add('active');
+                }
+            });
+        }
+        
+        function initModals() {
+            document.getElementById('addServiceBtn').addEventListener('click', () => openServiceModal());
+            document.getElementById('addCustomerBtn').addEventListener('click', () => openCustomerModal());
+            document.addEventListener('click', async e => {
+                if (e.target.matches('.edit-service-btn')) {
+                    const service = appState.services.find(s => s.id === e.target.dataset.id);
+                    if(service) openServiceModal(service, service.id);
+                }
+                if (e.target.matches('.edit-customer-btn')) {
+                    const customer = appState.customers.find(c => c.id === e.target.dataset.id);
+                    if(customer) openCustomerModal(customer, customer.id);
+                }
+                if (e.target.matches('.delete-btn')) {
+                    const {type, id} = e.target.dataset;
+                    const onConfirm = type === 'service' ? () => deleteService(id) : () => deleteCustomer(id);
+                    showConfirmationModal(`Are you sure you want to delete this ${type}?`, onConfirm);
+                }
+            });
+            document.querySelectorAll('.modal-close').forEach(btn => btn.addEventListener('click', () => btn.closest('.modal').classList.remove('active')));
+            document.getElementById('saveServiceBtn').addEventListener('click', saveService);
+            document.getElementById('saveCustomerBtn').addEventListener('click', saveCustomer);
+        }
+
+        function initAITools() {
+            document.getElementById('generateDescriptionBtn').addEventListener('click', async (e) => {
+                const serviceName = document.getElementById('serviceName').value;
+                if (!serviceName) { showToast("Please enter a service name first.", "info"); return; }
+                const prompt = `Write a short, compelling, one-sentence description for a local business service called "${serviceName}". Focus on the value to the customer. The business is "${appState.businessName}".`;
+                const description = await callGemini(prompt, e.target);
+                document.getElementById('serviceDescription').value = description.trim().replace(/^"|"$/g, '');
+            });
+
+            document.getElementById('generateMarketingEmailBtn').addEventListener('click', async (e) => {
+                if (appState.services.length === 0) {
+                    showToast("Please add at least one service before generating an email.", "info");
+                    return;
+                }
+                const serviceList = appState.services.map(s => `- ${s.name} ($${s.price})`).join('\n');
+                const prompt = `You are a marketing assistant for a small business called "${appState.businessName}". Write a short, friendly, and professional marketing email to send to existing customers. The email should remind them about the business, briefly mention some services, and include a call to action. Here are the available services:\n${serviceList}\n\nGenerate the email with a subject line like:\nSubject: [Your Subject Here]\n\nHi [Customer Name],\n...`;
+                const emailContent = await callGemini(prompt, e.target);
+                openAiResultModal("Generated Marketing Email", emailContent);
+            });
+
+            document.getElementById('generateSloganBtn').addEventListener('click', async (e) => {
+                const businessName = document.getElementById('sloganBusinessName').value;
+                if (!businessName) { showToast("Please enter your business name.", "info"); return; }
+                const prompt = `Generate 5 catchy and professional marketing slogans for a local business named "${businessName}".`;
+                document.getElementById('sloganResult').innerText = "Generating...";
+                const slogans = await callGemini(prompt, e.target);
+                document.getElementById('sloganResult').innerText = slogans;
+            });
+
+            document.getElementById('generateSocialPostBtn').addEventListener('click', async (e) => {
+                const serviceSelect = document.getElementById('socialPostServiceSelect');
+                const selectedServiceId = serviceSelect.value;
+                if (!selectedServiceId || appState.services.length === 0 || selectedServiceId === 'No services available') {
+                    showToast("Please add a service first, or select one from the list.", "info");
+                    return;
+                }
+                const selectedService = appState.services.find(s => s.id === selectedServiceId);
+                 if (!selectedService) {
+                    showToast("Selected service not found.", "error");
+                    return;
+                }
+                const tone = document.getElementById('socialPostToneSelect').value;
+
+                const prompt = `You are a social media manager for a local business called "${appState.businessName}". 
+                Write a short, engaging social media post for platforms like Facebook or Instagram.
+                The post should promote the service: "${selectedService.name}".
+                The service description is: "${selectedService.description}".
+                The tone of the post should be: ${tone}.
+                Include relevant hashtags. Do not include a placeholder for an image.`;
+                
+                document.getElementById('socialPostResult').innerText = "Generating...";
+                const post = await callGemini(prompt, e.target);
+                document.getElementById('socialPostResult').innerText = post;
+            });
+        }
+
+        function openAiResultModal(title, content) {
+            document.getElementById('aiResultModalTitle').textContent = title;
+            document.getElementById('aiResultModalBody').innerText = content;
+            document.getElementById('aiResultModal').classList.add('active');
+        }
+
+        // --- CRUD Functions ---
+        function openServiceModal(data = {}, id = null) {
+            const modal = document.getElementById('serviceModal');
+            document.getElementById('serviceModalTitle').textContent = id ? 'Edit Service' : 'Add New Service';
+            document.getElementById('serviceForm').reset();
+            document.querySelectorAll('#serviceForm .form-control').forEach(el => el.classList.remove('is-valid', 'is-invalid'));
+            document.getElementById('serviceId').value = id || '';
+            document.getElementById('serviceName').value = data.name || '';
+            document.getElementById('serviceDuration').value = data.duration || '';
+            document.getElementById('servicePrice').value = data.price || '';
+            document.getElementById('serviceDescription').value = data.description || '';
+            validateForm(document.getElementById('serviceForm'));
+            modal.classList.add('active');
+        }
+
+        async function saveService() {
+            const form = document.getElementById('serviceForm');
+            if (!validateForm(form)) {
+                showToast("Please fix the errors before saving.", "error");
+                return;
+            }
+            const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+            const id = document.getElementById('serviceId').value;
+            const data = {
+                name: document.getElementById('serviceName').value,
+                duration: parseInt(document.getElementById('serviceDuration').value),
+                price: parseFloat(document.getElementById('servicePrice').value),
+                description: document.getElementById('serviceDescription').value
+            };
+            const collectionPath = `artifacts/${appId}/users/${appState.userId}/services`;
+            try {
+                if (id) await setDoc(doc(db, collectionPath, id), data);
+                else await addDoc(collection(db, collectionPath), data);
+                showToast("Service saved successfully!", "success");
+                document.getElementById('serviceModal').classList.remove('active');
+            } catch (e) {
+                console.error("Error saving service:", e);
+                showToast("Failed to save service.", "error");
+            }
+        }
+
+        async function deleteService(id) {
+            const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+            await deleteDoc(doc(db, `artifacts/${appId}/users/${appState.userId}/services`, id));
+            showToast("Service deleted.", "info");
+        }
+        
+        function openCustomerModal(data = {}, id = null) {
+            const modal = document.getElementById('customerModal');
+            document.getElementById('customerModalTitle').textContent = id ? 'Edit Customer' : 'Add New Customer';
+            document.getElementById('customerForm').reset();
+            document.querySelectorAll('#customerForm .form-control').forEach el => el.classList.remove('is-valid', 'is-invalid'));
+            document.getElementById('customerId').value = id || '';
+            document.getElementById('customerName').value = data.name || '';
+            document.getElementById('customerEmail').value = data.email || '';
+            document.getElementById('customerPhone').value = data.phone || '';
+            validateForm(document.getElementById('customerForm'));
+            modal.classList.add('active');
+        }
+
+        async function saveCustomer() {
+            const form = document.getElementById('customerForm');
+            if (!validateForm(form)) {
+                showToast("Please fix the errors before saving.", "error");
+                return;
+            }
+            const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+            const id = document.getElementById('customerId').value;
+            const data = { name: document.getElementById('customerName').value, email: document.getElementById('customerEmail').value, phone: document.getElementById('customerPhone').value };
+            const collectionPath = `artifacts/${appId}/users/${appState.userId}/customers`;
+            try {
+                if (id) await setDoc(doc(db, collectionPath, id), data);
+                else await addDoc(collection(db, collectionPath), data);
+                showToast("Customer saved successfully!", "success");
+                document.getElementById('customerModal').classList.remove('active');
+            } catch (e) {
+                console.error("Error saving customer:", e);
+                showToast("Failed to save customer.", "error");
+            }
+        }
+
+        async function deleteCustomer(id) {
+            const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+            await deleteDoc(doc(db, `artifacts/${appId}/users/${appState.userId}/customers`, id));
+            showToast("Customer deleted.", "info");
+        }
+        
+        // --- UI/UX Polish ---
+        
+        function showToast(message, type = 'info', duration = 3000) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            const icons = { success: 'fa-check-circle', error: 'fa-times-circle', info: 'fa-info-circle' };
+            toast.innerHTML = `<i class="fas ${icons[type]}"></i><span>${message}</span>`;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('toast-out');
+                toast.addEventListener('animationend', () => toast.remove());
+            }, duration);
+        }
+
+        function showConfirmationModal(message, onConfirm) {
+            const modal = document.getElementById('confirmModal');
+            document.getElementById('confirmModalBody').textContent = message;
+            modal.classList.add('active');
+
+            const confirmBtn = document.getElementById('confirmModalBtn');
+            const newConfirmBtn = confirmBtn.cloneNode(true); // To remove old event listeners
+            confirmBtn.parentNode.replaceChild(newConfirmBtn, confirmBtn);
+
+            newConfirmBtn.addEventListener('click', () => {
+                onConfirm();
+                modal.classList.remove('active');
+            }, { once: true });
+        }
+        
+        function initForms() {
+            ['serviceForm', 'customerForm'].forEach(formId => {
+                const form = document.getElementById(formId);
+                form.addEventListener('input', () => validateForm(form));
+            });
+        }
+        
+        function validateForm(form) {
+            let isFormValid = true;
+            form.querySelectorAll('input[required]').forEach(input => {
+                let isValid = input.checkValidity();
+                if (input.type === 'email') {
+                    isValid = /^[^\s@]+@[^^\s@]+\.[^\s@]+$/.test(input.value);
+                } else if (input.type === 'number') {
+                    isValid = input.value !== '' && parseFloat(input.value) >= (input.min || 0);
+                }
+                
+                if (isValid) {
+                    input.classList.remove('is-invalid');
+                    input.classList.add('is-valid');
+                } else {
+                    input.classList.remove('is-valid');
+                    input.classList.add('is-invalid');
+                    isFormValid = false;
+                }
+            });
+            const saveBtn = form.closest('.modal-content').querySelector('.btn--primary');
+            saveBtn.disabled = !isFormValid;
+            return isFormValid;
+        }
+
+        // --- Website Builder Logic ---
+        function initWebsiteBuilder() {
+            const nameInput = document.getElementById('websiteBusinessName');
+            const previewName = document.getElementById('previewBusinessName');
+
+            nameInput.addEventListener('input', () => {
+                previewName.textContent = nameInput.value || 'Your Business Name';
+            });
+
+            document.getElementById('saveWebsiteBtn').addEventListener('click', async (e) => {
+                const buttonEl = e.target;
+                buttonEl.classList.add('loading');
+                const newName = nameInput.value;
+                if (!newName) {
+                    showToast("Business name cannot be empty.", "error");
+                    buttonEl.classList.remove('loading');
+                    return;
+                }
+                const appId = typeof __app_id !== "undefined" ? __app_id : "local-business-hub";
+                const docRef = doc(db, `artifacts/${appId}/users/${appState.userId}/business/profile`);
+                try {
+                    await updateDoc(docRef, { name: newName });
+                    showToast("Business name updated successfully!", "success");
+                } catch (error) {
+                    console.error("Error updating business name:", error);
+                    showToast("Failed to update business name.", "error");
+                } finally {
+                    buttonEl.classList.remove('loading');
+                }
+            });
+        }
+
+
+        // --- Theme Toggle ---
+        function initTheme() {
+            const themeToggle = document.getElementById('themeToggle');
+            
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                const iconClass = theme === 'dark' ? 'fa-sun' : 'fa-moon';
+                themeToggle.innerHTML = `<i class="fas ${iconClass}"></i>`;
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(newTheme);
+            });
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+            setTheme(initialTheme);
+        }
+        
+        // --- Calendar ---
+        function renderCalendar() {
+            const container = document.getElementById('calendar-container');
+            const today = new Date();
+            const month = today.getMonth();
+            const year = today.getFullYear();
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            let html = `<h3>${today.toLocaleString('default', { month: 'long' })} ${year}</h3><div class="calendar-grid">`;
+            ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => html += `<div style="text-align: center; font-weight: bold;">${day}</div>`);
+            for (let i = 0; i < firstDay.getDay(); i++) html += '<div class="calendar-day other-month"></div>';
+            for (let i = 1; i <= lastDay.getDate(); i++) html += `<div class="calendar-day"><div class="day-number">${i}</div></div>`;
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
 </body>
 </html>
