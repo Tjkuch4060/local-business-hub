@@ -34,6 +34,12 @@ Desktop.ini
 logs/
 *.log
 
+# Local dev server logs
+.dev-server*.log
+
+# Lighthouse reports
+*.report.html
+
 # Testing
 coverage/
 .nyc_output/
