@@ -230,6 +230,7 @@
         .hero-mockup { background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-32); box-shadow: var(--shadow-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-16); }
         .hero-mockup i { font-size: 4rem; color: var(--color-primary); }
         .hero-mockup span { font-weight: var(--font-weight-semibold); color: var(--color-text); }
+        .hero-picture img { display: block; max-width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-md); }
 
         .cta-section { padding: 64px 0; background: rgba(var(--color-teal-500-rgb), 0.05); text-align: center; }
         html[data-theme="dark"] .cta-section { background: rgba(var(--color-teal-300-rgb), 0.05); }
@@ -385,6 +386,16 @@
                             <i class="fas fa-desktop"></i>
                             <span>Your Business Online</span>
                         </div>
+                        <!-- Responsive picture that prefers optimized formats if present.
+                             To use: place assets/hero.jpg (or .png), then run `npm run optimize:images`.
+                             Outputs will be created in optimized/hero.webp and optimized/hero.avif.
+                             The inline SVG below is a safe placeholder until you add a real image. -->
+                        <picture class="hero-picture" style="margin-top: 16px;">
+                            <source srcset="optimized/hero.avif" type="image/avif">
+                            <source srcset="optimized/hero.webp" type="image/webp">
+                            <img alt="Business showcase"
+                                 src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='960' height='540' viewBox='0 0 960 540'><rect width='960' height='540' fill='%23fcfcf9'/><rect x='40' y='40' width='880' height='460' rx='12' fill='%23ffffff' stroke='%23c9c4bb' stroke-width='2'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-size='20' fill='%23626c71'>Add assets/hero.jpg and run npm run optimize:images to see your image here</text></svg>">
+                        </picture>
                     </div>
                 </div>
             </div>
